@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI JEE Coach</title>
+    <!-- Tailwind CSS v4 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .glow-button {
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+        }
+        .xp-bar {
+            transition: width 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen pb-24">
+
+    <!-- Header -->
+    <header class="bg-slate-900/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-800 p-4 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-gradient-to-tr from-blue-600 to-violet-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                J
+            </div>
+            <div>
+                <h1 class="text-md font-bold bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">AI JEE Coach</h1>
+                <p class="text-xs text-slate-400">Welcome back, Warrior!</p>
+            </div>
+        </div>
+        <div class="flex items-center gap-3 bg-slate-800/60 px-3 py-1.5 rounded-full border border-slate-700/50">
+            <div class="flex items-center gap-1 text-amber-500 font-bold text-sm">
+                <i class="fa-solid fa-fire animate-pulse"></i> <span>7 Days</span>
+            </div>
+            <div class="h-4 w-px bg-slate-700"></div>
+            <div class="flex items-center gap-1 text-violet-400 font-bold text-sm">
+                <i class="fa-solid fa-trophy"></i> <span>Level 3</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-md mx-auto p-4 space-y-6">
+        
+        <!-- AI Partner Box -->
+        <div class="bg-gradient-to-r from-red-950/40 to-slate-900 border border-red-900/40 rounded-2xl p-4 shadow-xl relative overflow-hidden">
+            <div class="absolute -right-4 -bottom-4 text-red-500/10 text-7xl font-black">AI</div>
+            <div class="flex gap-3 items-start">
+                <div class="bg-red-500/20 p-2 rounded-xl text-red-400 mt-1">
+                    <i class="fa-solid fa-robot text-lg"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-red-400 text-sm">AI Partner: Robot Buddy</h4>
+                    <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                        "Aryan, kal tumne target miss kiya tha. Aaj backlogs heavy hain! Humein aaj 20 extra Physics concepts practice karne honge target match karne ke liye. Alsi mat bano, let's crack IIT!"
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Syllabus Tracker -->
+        <section class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3">
+            <h3 class="text-sm font-bold text-slate-400 tracking-wider uppercase flex items-center gap-2">
+                <i class="fa-solid fa-chart-pie text-blue-500"></i> Syllabus Tracker
+            </h3>
+            <div class="space-y-3">
+                <div>
+                    <div class="flex justify-between text-xs mb-1">
+                        <span class="font-medium text-slate-300">Physics (Mechanics + Electrostatics)</span>
+                        <span class="text-blue-400 font-bold">64%</span>
+                    </div>
+                    <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                        <div class="bg-blue-500 h-full rounded-full" style="width: 64%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-xs mb-1">
+                        <span class="font-medium text-slate-300">Mathematics (Linear Algebra)</span>
+                        <span class="text-violet-400 font-bold">45%</span>
+                    </div>
+                    <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                        <div class="bg-violet-500 h-full rounded-full" style="width: 45%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Targets -->
+        <section class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-4">
+            <div class="flex justify-between items-center">
+                <h3 class="text-sm font-bold text-slate-400 tracking-wider uppercase flex items-center gap-2">
+                    <i class="fa-solid fa-calendar-day text-emerald-500"></i> Today's AI Targets
+                </h3>
+                <span class="text-xs bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded-full font-medium">Active</span>
+            </div>
+            <div class="space-y-4 border-l-2 border-slate-800 ml-2 pl-4 relative">
+                <!-- Target 1 -->
+                <div class="relative">
+                    <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-amber-500 ring-4 ring-slate-950"></div>
+                    <span class="text-[10px] uppercase font-bold text-amber-500 tracking-widest">6:00 AM - 8:00 AM</span>
+                    <h4 class="text-sm font-semibold text-slate-200">Revision Session (1-4-7 Rule)</h4>
+                    <p class="text-xs text-slate-400">Revise Work Energy Theorem formulas and Matrix Determinants notes.</p>
+                </div>
+                <!-- Target 2 -->
+                <div class="relative">
+                    <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-blue-500 ring-4 ring-slate-950"></div>
+                    <span class="text-[10px] uppercase font-bold text-blue-500 tracking-widest">9:00 AM - 1:00 PM</span>
+                    <h4 class="text-sm font-semibold text-slate-200">Coaching / Classes</h4>
+                    <p class="text-xs text-slate-400">Attend Electrostatics Advanced level lectures. Take proper running notes.</p>
+                </div>
+                <!-- Target 3 -->
+                <div class="relative">
+                    <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-violet-500 ring-4 ring-slate-950"></div>
+                    <span class="text-[10px] uppercase font-bold text-violet-500 tracking-widest">4:00 PM - 9:00 PM</span>
+                    <h4 class="text-sm font-semibold text-slate-200">Library Self Study & PYQ Engine</h4>
+                    <p class="text-xs text-slate-400">Solve 40 Physics & 35 Maths questions recommended by AI.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Grid Buttons -->
+        <section class="grid grid-cols-2 gap-3">
+            <button onclick="openModal('teacherModal')" class="bg-gradient-to-b from-slate-900 to-slate-900/60 border border-slate-800 p-4 rounded-2xl text-left hover:border-slate-700 transition space-y-2 active:scale-95">
+                <div class="w-8 h-8 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-400">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                </div>
+                <h4 class="text-xs font-bold text-slate-200">AI Teacher</h4>
+                <p class="text-[11px] text-slate-400">Hinglish concepts & formula derivations.</p>
+            </button>
+
+            <button onclick="openModal('scanModal')" class="bg-gradient-to-b from-slate-900 to-slate-900/60 border border-slate-800 p-4 rounded-2xl text-left hover:border-slate-700 transition space-y-2 active:scale-95">
+                <div class="w-8 h-8 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+                <h4 class="text-xs font-bold text-slate-200">Scan & Solve</h4>
+                <p class="text-[11px] text-slate-400">Upload DPP, Notes or PYQs to get steps.</p>
+            </button>
+
+            <button onclick="openModal('pyqModal')" class="bg-gradient-to-b from-slate-900 to-slate-900/60 border border-slate-800 p-4 rounded-2xl text-left hover:border-slate-700 transition space-y-2 active:scale-95">
+                <div class="w-8 h-8 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-400">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h4 class="text-xs font-bold text-slate-200">PYQ Engine</h4>
+                <p class="text-[11px] text-slate-400">20+ Years JEE Main & Advanced filters.</p>
+            </button>
+
+            <button onclick="openModal('vivaModal')" class="bg-gradient-to-b from-slate-900 to-slate-900/60 border border-slate-800 p-4 rounded-2xl text-left hover:border-slate-700 transition space-y-2 active:scale-95">
+                <div class="w-8 h-8 bg-fuchsia-500/10 rounded-xl flex items-center justify-center text-fuchsia-400">
+                    <i class="fa-solid fa-microphone-lines"></i>
+                </div>
+                <h4 class="text-xs font-bold text-slate-200">Viva Mode</h4>
+                <p class="text-[11px] text-slate-400">Interactive voice & trap conceptual questions.</p>
+            </button>
+        </section>
+
+        <!-- Prediction Card -->
+        <section class="bg-gradient-to-r from-blue-950/30 to-violet-950/30 border border-blue-900/30 rounded-2xl p-4 text-center space-y-3">
+            <div>
+                <h4 class="text-sm font-bold text-slate-200">Target: IIT Bombay CSE</h4>
+                <p class="text-xs text-slate-400 mt-0.5">Based on latest Mock Scores</p>
+            </div>
+            <div class="grid grid-cols-2 gap-2 bg-slate-900/80 p-3 rounded-xl border border-slate-800">
+                <div>
+                    <span class="text-[10px] text-slate-500 block uppercase font-bold">Predicted Rank</span>
+                    <span class="text-lg font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">#1,420</span>
+                </div>
+                <div>
+                    <span class="text-[10px] text-slate-500 block uppercase font-bold">Current Percentile</span>
+                    <span class="text-lg font-black text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-fuchsia-400">99.12%</span>
+                </div>
+            </div>
+            <p class="text-[11px] text-amber-400 bg-amber-500/5 py-1 rounded border border-amber-500/10">
+                ⚠️ Weakness Alert: Improve speed in 'Electrostatics Mixed Variables' to touch under #500 rank.
+            </p>
+        </section>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-slate-900/90 backdrop-blur-lg border-t border-slate-800 px-6 py-2 max-w-md mx-auto flex justify-between items-center text-slate-400">
+        <button class="flex flex-col items-center gap-0.5 text-blue-500">
+            <i class="fa-solid fa-house-chimney text-lg"></i>
+            <span class="text-[10px] font-medium">Home</span>
+        </button>
+        <button onclick="openModal('teacherModal')" class="flex flex-col items-center gap-0.5 hover:text-slate-200">
+            <i class="fa-solid fa-book-open text-lg"></i>
+            <span class="text-[10px] font-medium">Learn</span>
+        </button>
+        <button onclick="openModal('scanModal')" class="w-12 h-12 bg-gradient-to-tr from-blue-600 to-violet-600 text-white rounded-full flex items-center justify-center -translate-y-4 shadow-lg glow-button active:scale-95 transition">
+            <i class="fa-solid fa-plus text-xl"></i>
+        </button>
+        <button onclick="openModal('pyqModal')" class="flex flex-col items-center gap-0.5 hover:text-slate-200">
+            <i class="fa-solid fa-file-pen text-lg"></i>
+            <span class="text-[10px] font-medium">Tests</span>
+        </button>
+        <button class="flex flex-col items-center gap-0.5 hover:text-slate-200">
+            <i class="fa-solid fa-user-gear text-lg"></i>
+            <span class="text-[10px] font-medium">Profile</span>
+        </button>
+    </nav>
+
+    <!-- MODALS -->
+<!-- AI Teacher Modal -->
+<div id="teacherModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-end justify-center">
+    <div class="bg-slate-900 w-full max-w-md rounded-t-3xl p-5 space-y-4 max-h-[85vh] overflow-y-auto border-t border-slate-800">
+        <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+            <h3 class="font-bold text-lg text-blue-400"><i class="fa-solid fa-graduation-cap"></i> AI Concept Teacher</h3>
+            <button onclick="closeModal('teacherModal')" class="text-slate-400 hover:text-white text-xl">&times;</button>
+        </div>
+        
+        <div class="space-y-3">
+            <!-- ID add ki: ai-input -->
+            <input type="text" id="ai-input" placeholder="Ask anything... e.g., Work Energy Theorem" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-500 text-slate-200">
+            
+            <!-- Button add kiya taaki AI call ho sake -->
+            <button onclick="askAI()" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 rounded-xl text-sm transition">
+                Poocho AI se
+            </button>
+
+            <!-- Yahan par AI ka jawab aayega (ID add ki: ai-response-display) -->
+            <div id="ai-response-display" class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2 text-xs leading-relaxed">
+                <p class="text-slate-500 italic">Coach ka wait kar raha hoon...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Scan Modal -->
+    <div id="scanModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-end justify-center">
+        <div class="bg-slate-900 w-full max-w-md rounded-t-3xl p-5 space-y-4 border-t border-slate-800">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                <h3 class="font-bold text-lg text-emerald-400"><i class="fa-solid fa-camera"></i> Scan & Solve Engine</h3>
+                <button onclick="closeModal('scanModal')" class="text-slate-400 hover:text-white text-xl">&times;</button>
+            </div>
+            <div class="border-2 border-dashed border-slate-800 rounded-2xl p-8 text-center bg-slate-950/50 hover:border-emerald-500/50 transition cursor-pointer">
+                <i class="fa-solid fa-cloud-arrow-up text-4xl text-slate-600 mb-2"></i>
+                <p class="text-sm font-semibold text-slate-300">Upload Notes, DPP, or Book Photo</p>
+                <p class="text-xs text-slate-500 mt-1">Supports PNG, JPG, PDF up to 10MB</p>
+            </div>
+            <button class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl text-sm transition shadow-lg shadow-emerald-900/20">Process Image via AI</button>
+        </div>
+    </div>
+
+    <!-- PYQ Modal -->
+    <div id="pyqModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-end justify-center">
+        <div class="bg-slate-900 w-full max-w-md rounded-t-3xl p-5 space-y-4 border-t border-slate-800">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                <h3 class="font-bold text-lg text-amber-400"><i class="fa-solid fa-filter"></i> Smart PYQ Filter</h3>
+                <button onclick="closeModal('pyqModal')" class="text-slate-400 hover:text-white text-xl">&times;</button>
+            </div>
+            <div class="space-y-3 text-xs">
+                <div>
+                    <label class="block text-slate-400 font-bold mb-1">Subject</label>
+                    <select class="w-full bg-slate-950 border border-slate-800 rounded-xl p-2.5 text-slate-200 focus:outline-none">
+                        <option>Physics</option>
+                        <option>Chemistry</option>
+                        <option>Mathematics</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-slate-400 font-bold mb-1">Chapter</label>
+                    <select class="w-full bg-slate-950 border border-slate-800 rounded-xl p-2.5 text-slate-200 focus:outline-none">
+                        <option>Electrostatics</option>
+                        <option>Laws of Motion</option>
+                        <option>Determinants & Matrices</option>
+                    </select>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <div>
+                        <label class="block text-slate-400 font-bold mb-1">Exam Type</label>
+                        <select class="w-full bg-slate-950 border border-slate-800 rounded-xl p-2.5 text-slate-200 focus:outline-none">
+                            <option>JEE Advanced</option>
+                            <option>JEE Main</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-slate-400 font-bold mb-1">Difficulty</label>
+                        <select class="w-full bg-slate-950 border border-slate-800 rounded-xl p-2.5 text-slate-200 focus:outline-none">
+                            <option>Hard (IIT Level)</option>
+                            <option>Medium</option>
+                            <option>Basic</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button class="w-full bg-amber-600 hover:bg-amber-500 text-slate-950 font-black py-3 rounded-xl text-sm transition shadow-lg shadow-amber-900/20">Generate Recommended Practice Pack</button>
+        </div>
+    </div>
+
+    <!-- Viva Modal -->
+    <div id="vivaModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-end justify-center">
+        <div class="bg-slate-900 w-full max-w-md rounded-t-3xl p-5 space-y-4 text-center border-t border-slate-800">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-3 text-left">
+                <h3 class="font-bold text-lg text-fuchsia-400"><i class="fa-solid fa-microphone-lines"></i> Interactive Viva Mode</h3>
+                <button onclick="closeModal('vivaModal')" class="text-slate-400 hover:text-white text-xl">&times;</button>
+            </div>
+            <div class="py-6 space-y-4">
+                <div class="w-20 h-20 bg-fuchsia-500/10 border border-fuchsia-500/30 rounded-full flex items-center justify-center mx-auto text-fuchsia-400 animate-bounce">
+                    <i class="fa-solid fa-microphone text-3xl"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-200">AI Teacher is Listening...</h4>
+                    <p class="text-xs text-slate-400 px-6 mt-1">"Agar hum ek conducting sphere ko charge dein, to sara charge surface pe kyun aata hai? Iske peeche ka main reason batao Aryan."</p>
+                </div>
+            </div>
+            <button class="w-full bg-slate-950 border border-slate-800 hover:border-fuchsia-500/40 text-slate-300 font-bold py-3 rounded-xl text-sm transition">Tap to Answer</button>
+        </div>
+    </div>
+
+    <!-- JavaScript for Modals -->
+    
+        <script>
+    // --- Modal Control ---
+    function openModal(id) {
+        document.getElementById(id).classList.remove('hidden');
+    }
+    
+    function closeModal(id) {
+        document.getElementById(id).classList.add('hidden');
+    }
+
+    // --- AI Teacher Engine ---
+    async function askAI() {
+        const input = document.getElementById('ai-input').value;
+        const display = document.getElementById('ai-response-display');
+        
+        if (!input) return alert("Kuch toh poocho bhai!");
+
+        display.innerHTML = "<p class='text-blue-400'>Coach dimaag chala raha hai... 🤔</p>";
+
+        try {
+            // NOTE: Yahan 'YOUR_API_KEY' ki jagah apni Gemini API Key daalo
+            const API_KEY = "AQ.Ab8RN6Lrdtq5-espGaFztiEpZh3aqYbdM-JjtA7d9Db5LG2DkA"; 
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
+
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    contents: [{ parts: [{ text: "Explain this concept for a JEE aspirant in simple Hinglish: " + input }] }]
+                })
+            });
+
+            const data = await response.json();
+            const answer = data.candidates[0].content.parts[0].text;
+            
+            // Format response
+            display.innerHTML = `<p class='text-slate-300'>${answer.replace(/\n/g, '<br>')}</p>`;
+        } catch (error) {
+            display.innerHTML = "<p class='text-red-400'>Error: API connection fail hua. Check your key!</p>";
+        }
+    }
+</script>
